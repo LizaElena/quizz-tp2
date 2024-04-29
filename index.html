@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream</title>
+
+    <link rel="shortcut icon" href="images/logo-image.webp" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body id="body" >
+    <header class="position-absolute z-2 wanda" id="hidden">
+      <nav class="navbar navbar-expand-lg row d-flex ">
+        <div class="d-flex  justify-content-between"> 
+          <div>
+            <img src="images/logo-image.webp" alt="" width="50">
+          </div>
+        
+            <button  class="navbar-toggler border border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse small-font" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Films</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Animes</a>
+                </li>
+                
+              </ul>
+            </div>
+            
+            <div class="d-lg-flex d-none btn-header small-font" >
+              <div class="" id="theme">
+                <button class="btn btn-outline-danger  text-light" href="">Theme</button>
+              </div>    
+            </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="position-relative d-flex flex-row d-md-block">
+        <div class="opacity-50">
+          <img src="images/background-Header.jpeg"  width="100%" alt="">
+        </div> 
+        <div class="container  z-1 position-absolute p-5 rounded-3 top-0 bottom-50 start-0">
+            <div class="row d-none d-sm-flex">
+              <div class=" col-6 mt-5">                
+                <img src="images/background-Header.png" width="100%" alt="">
+                <p class="mt-4">
+                  Ce biopic de Thurgood Marshall, le premier Noir à avoir siégé à la Cour suprême des États-Unis, relate son rôle clé dans une affaire retentissante liée aux droits civils.
+                </p>
+                <p class="mt-4">
+                  Économisez plus de 15 % au forfait Premium ou Standard avec un abonnement annuel*.
+                </p>
+                
+              </div>
+            
+            </div>
+            <div class="row col-6 ps-2 mt-4" role="text">
+              <input class="p-3  col-8" type="text" placeholder="Adresse Courriel" aria-label="text">
+              <button id="abonnement" type="submit" class="btn p-3 btn-danger col" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">M'abonner Maintenant</button>
+            </div>
+            <div id="affichageAbonnement" class="mt-5">
+              <p>Merci de nous avoir choisi. <br>
+              Bon streamming!!</p>
+            </div>
+        </div>
+          
+      </div>
+    
+      
+      
+        <section class="mt-5">
+          <div class="container">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="d-none d-lg-flex">
+                <p>Regarder un animé</p>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active data-bs-interval=8000">
+                  <div class="row">
+                    <img src="images/animes/image kuroko.jpeg" class="d-block  col-3" alt="anime kuroko">
+                    <img src="images/animes/image Stronger.jpeg" class="d-block  col-3" alt="anime Stronger">
+                    <img src="images/animes/image HxH.webp" class="d-block  col-3" alt="anime hunter hunter">
+                    <img src="images/animes/image naruto.webp" class="d-block  col-3" alt="anime naruto">
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <img src="images/animes/image seven deadly sins.jpeg" class="d-block  col-3" alt="anime kuroko">
+                    <img src="images/animes/image death note.jpeg" class="d-block  col-3" alt="anime Stronger">
+                    <img src="images/animes/image one punch man.webp" class="d-block  col-3" alt="anime hunter hunter">
+                    <img src="images/animes/image baki.jpeg" class="d-block  col-3" alt="anime naruto">
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <img src="images/animes/image caltlevania.jpeg" class="d-block  col-3" alt="anime kuroko">
+                    <img src="images/animes/image pokemon.webp" class="d-block  col-3" alt="anime Stronger">
+                    <img src="images/animes/image beblade.webp" class="d-block  col-3" alt="anime hunter hunter">
+                    <img src="images/animes/image sakura.webp" class="d-block  col-3" alt="anime naruto">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+        </section>
+        <section class="mt-4 d-none d-lg-flex">
+          <div class="container">
+            <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel" >
+              <div>
+                <p>Regarder un Film</p>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active data-bs-interval=8000">
+                  <div class="row">
+                    <img src="images/films/film1.jpeg" class="d-block  col-3" alt=" ">
+                    <img src="images/films/film2.jpeg" class="d-block  col-3" alt=" ">
+                    <img src="images/films/film3.jpeg" class="d-block  col-3" alt="  ">
+                    <img src="images/films/film4.webp" class="d-block  col-3" alt=" ">
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <img src="images/films/film5.jpeg" class="d-block  col-3" alt=" ">
+                    <img src="images/films/film6.webp" class="d-block  col-3" alt=" ">
+                    <img src="images/films/film7.jpeg" class="d-block  col-3" alt="  ">
+                    <img src="images/films/film8.webp" class="d-block  col-3" alt=" ">
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <img src="images/films/film9.webp" class="d-block  col-3" alt=" ">
+                    <img src="images/films/film10.webp" class="d-block  col-3" alt=" ">
+                    <img src="images/films/filme11.webp" class="d-block  col-3" alt="  ">
+                    <img src="images/films/film12.jpeg" class="d-block  col-3" alt=" ">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="mt-4 d-none d-lg-flex">
+          <div class="container">
+            <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+              <div>
+                <p>Regarder une Série</p>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active data-bs-interval=8000">
+                  <div class="row">
+                    <img src="images/series/serie1.jpeg" class="d-block  col-3" alt=" ">
+                    <img src="images/series/serie2.jpeg" class="d-block  col-3" alt=" ">
+                    <img src="images/series/serie3.jpeg" class="d-block  col-3" alt="  ">
+                    <img src="images/series/serie4.jpeg" class="d-block  col-3" alt=" ">
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <img src="images/series/serie5.webp" class="d-block  col-3" alt=" ">
+                    <img src="images/series/serie6.jpeg" class="d-block  col-3" alt=" ">
+                    <img src="images/series/serie7.jpeg" class="d-block  col-3" alt="  ">
+                    <img src="images/series/serie8.jpeg" class="d-block  col-3" alt=" ">
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <img src="images/series/serie9.jpeg" class="d-block  col-3" alt=" ">
+                    <img src="images/series/serie10.jpeg" class="d-block  col-3" alt=" ">
+                    <img src="images/series/serie11.jpeg" class="d-block  col-3" alt="  ">
+                    <img src="images/series/serie12.jpeg" class="d-block  col-3" alt=" ">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="mt-5">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-6">
+                <video controls="controls" loop="loop" autoplay="autoplay" class="" width="100%">
+                  <source src="images/videos/Le pouvoir secret d'Eren !_!_ Attaques des Titans S2 episode final VF.mp4"> 
+                </video>
+              </div>
+              <div class="col-6 d-flex">
+                <p class="text-center lh-lg mt-5">
+                  L’histoire tourne autour du personnage d’Eren Jäger dans un monde où l’humanité vit entourée d’immenses murs pour se protéger de créatures gigantesques, les Titans. Le récit raconte le combat mené par l’humanité pour reconquérir son territoire, en éclaircissant les mystères liés à l’apparition des Titans, du monde extérieur et des évènements précédant la construction des murs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-6 d-flex">
+                <p class="text-center lh-lg mt-5"> 
+                  Une adaptation en série télévisée d’animation de vingt-cinq épisodes produite par Wit Studio est diffusée initialement entre avril et septembre 2013 sur la chaîne MBS au Japon. Une deuxième saison de douze épisodes est diffusée entre avril et juin 2017. Une troisième saison de vingt-deux épisodes, divisée en deux parties, est diffusée entre juillet 2018 et juillet 2019 sur NHK General TV.
+                </p>
+              </div>
+              <div class="col-6">
+                <video controls="controls" loop="loop" autoplay="autoplay" class="" width="100%">
+                  <source src="images/videos/Attaque des titans Eren VS Reiner VF (1).mp4"> 
+              </video>
+              </div>
+              
+            </div>
+            
+          </div>
+        </section>
+        <section class="mt-5">
+          <div class="container mt-5">
+            <h1 class="text-center mt-5 mb-5">Accessible sur vos appareils préférés</h1>
+            <div class="row">
+              <div class="col-3 text-center">
+                <img src="images/image tv.png" width="100%" alt="">
+                <h3>Téléviseurs</h3>
+                <ul class="opacity-50">
+                  <li>Amazon Fire TV</li>
+                  <li>Appareils Android TV</li> 
+                  <li>Apple TV</li>
+                  <li>Samsung TV</li>  
+                </ul>
+              </div>
+              <div class="col-3 text-center">
+                <img src="images/image pc.png" width="100%" alt="">
+                <h3>Ordinateurs</h3>
+                <ul class="opacity-50">
+                  <li>Chrome Os</li>
+                  <li>MacOs</li>
+                  <li>PC Windows</li>
+                </ul>
+              </div>
+              <div class="col-3 text-center">
+                <img src="images/image tel.png" width="100%" alt="">
+                <h3>Tablettes et Telephones</h3>
+                <ul class="opacity-50">
+                  <li>Tablettes Amazon Fire</li>
+                  <li>Téléphones et tablettes Android</li>
+                  <li>iPhone et iPad</li>
+                </ul>
+              </div>
+              <div class="col-3 text-center">
+                <img src="images/image console.png" width="100%" alt="">
+                <h3>Consoles de jeux</h3>
+                <ul class="opacity-50">
+                  <li>PS4</li>
+                  <li>PS5</li>
+                  <li>Xbox Series X</li>
+                  <li>Xbox One</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="mt-5">       
+        <div class="container">
+          <div class=" d-flex justify-content-center">
+            <img src="images/logo-image.webp" width="200" alt="">
+          </div>
+          <div class="p-5">
+          <div class="row mt-5 p-5 py-0">
+            <div class="col">
+              <span>
+                <select name="language selector" id="" >
+                  <option value="français">Français</option>
+                  <option value="english">English</option>
+                  <option value="german">Allemand</option>
+                </select>
+              </span>
+            </div>
+            <div class="col">
+              <a href="">
+                <p class="text-center">À propos de nous</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="">
+                <p class="text-center">Abonnement</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="">
+                <p class="text-center">Confidentialité</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="">
+                <p class="text-center">Aide</p>
+              </a>
+            </div>
+            <div class="copyright mt-5">
+              <p class="">© Liza Franka Elena Dze, tous droits réservés <br>
+                Dernière modification de cette page 22 mars 2023 à 20:00</p>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
