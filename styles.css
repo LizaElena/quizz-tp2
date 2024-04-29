@@ -1,0 +1,60 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html, body, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: gulzar;
+    font-size: 18px;
+}
+
+/* header nav {
+    /* backdrop-filter: blur(5px);
+    --webkit-backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.1); */
+
+
+
+nav {
+    background-color: none;
+    width: 100%;
+    
+}
+
+.nav-link {
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.none, #affichageAbonnement {
+    display: none;
+
+}
+
+.cadre  {
+    padding: 10rem;
+
+}
+
+.copyright  {
+    font-size: 13px;
+    
+}
